@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os.path
-import re
 
+import re
+import os.path
 from setuptools import setup, find_packages
 
 
@@ -58,7 +58,7 @@ def install():
             'Programming Language :: Python :: 3.9',
             'Programming Language :: Python :: 3.10'
         ],
-        packages=find_packages(exclude=['docs', 'tests']),
+        packages=find_packages(exclude=['tests']),
         keywords='google translate translator',
         install_requires=[
             'httpx>=0.22.0',
