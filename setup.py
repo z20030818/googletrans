@@ -59,6 +59,7 @@ def install():
         keywords='google translate translator',
         install_requires=[
             'httpx>=0.22.0',
+            'h2==0.4.*'
         ],
         python_requires= '>=3.6',
         tests_require=[
