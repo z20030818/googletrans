@@ -62,14 +62,10 @@ def install():
             'Programming Language :: Python :: 3.9',
             'Programming Language :: Python :: 3.10'
         ],
-        packages=find_packages(exclude=['tests']),
+        packages=find_packages(),
         keywords='google translate translator',
         install_requires=install_requires,
         python_requires='>=3.7',
-        tests_require=[
-            'pytest',
-            'coveralls',
-        ],
         scripts=['translate']
     )
 
