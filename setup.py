@@ -33,6 +33,10 @@ def get_readme():
     return get_file(os.path.dirname(__file__), 'README.rst')
 
 
+with open("requirements.txt", encoding="utf-8") as r:
+    install_requires = [i.strip() for i in r if not i.startswith('#')]
+
+
 def install():
     setup(
         name='googletrans',
@@ -60,11 +64,8 @@ def install():
         ],
         packages=find_packages(exclude=['tests']),
         keywords='google translate translator',
-        install_requires=[
-            'httpx>=0.22.0',
-            'h2>=4,<5'
-        ],
-        python_requires= '>=3.7',
+        install_requires=install_requires,
+        python_requires='>=3.7',
         tests_require=[
             'pytest',
             'coveralls',
