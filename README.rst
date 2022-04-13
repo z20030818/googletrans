@@ -9,7 +9,6 @@ implemented Google Translate API. This uses the `Google Translate Ajax
 API <https://translate.google.com>`__ to make calls to such methods as
 detect and translate.
 
-Compatible with Python 3.6+.
 
 For details refer to the `API
 Documentation <https://py-googletrans.readthedocs.io/en/latest>`__.
